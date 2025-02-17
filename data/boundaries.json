@@ -7560,6 +7560,7 @@
     }
   },
   {
+    "placeId": "ChIJQ3e3vlcUkFQRvvw4RMHzUjM",
     "name": "Wallingford, Seattle, WA, USA",
     "type": "neighborhood",
     "geometry": {
@@ -10250,7 +10251,6 @@
           ]
         ]
       ]
-    },
-    "placeId": "ChIJQ3e3vlcUkFQRvvw4RMHzUjM"
+    }
   }
 ]
