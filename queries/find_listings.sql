@@ -1,6 +1,9 @@
 -- Find Listings Inside a Boundary
 SELECT
-  l.*
+  l.id,
+  l.line1,
+  l.neighborhood,
+  l.view
 FROM
   listings l
   JOIN boundaries b ON ST_Contains(b.geom, l.geom)
