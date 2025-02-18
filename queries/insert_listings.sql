@@ -1,8 +1,21 @@
 insert into
   listings (
     place_id,
-    line1,
+    address_line_1,
+    city,
+    "state",
+    zip,
     neighborhood,
+    list_price,
+    listed_date,
+    property_type_id,
+    listing_status_id,
+    "description",
+    beds,
+    baths,
+    sqft,
+    lot_size,
+    year_built,
     view,
     waterfront,
     geom
@@ -11,7 +24,20 @@ values
   (
     'ChIJN8s8bakVkFQROOxDzEy1P_I',
     '213A North 39th Street',
+    'Seattle',
+    'WA',
+    '98103',
     'Fremont',
+    478000,
+    '2024-11-11T14:10:50.675Z',
+    5,
+    1,
+    'Tondeo thorax amiculum angustus. Adhaero sono sponte surculus ventus cribro auditor. Auctor vito custodia acies.',
+    0,
+    0,
+    1600,
+    2700,
+    1992,
     true,
     false,
     ST_SetSRID(
@@ -31,18 +57,60 @@ insert into
   photo_gallery_images (photo_gallery_id, url, caption, position)
 values
   (
-    1,
+    5,
     '/gallery/J8uh5DvjaZy5/0.jpg',
     'Quisquam calculus conspergo cena stultus',
     0
   );
 
--- Use to test if listing is outside viewport bounds
+-- Add open houses
+insert into
+  open_houses (listing_id, start_time, end_time, comments)
+  values
+    (
+      10,
+      '2024-12-18T12:39:09.452Z',
+      '2024-12-18T14:39:09.452Z',
+      'Terga color ver impedit civis clementia ab numquam.'
+    ),
+    (
+      10,
+      '2025-02-04T01:42:51.607Z',
+      '2025-02-04T07:42:51.607Z',
+      'Ad toties usitas trepide campana beatae synagoga.'
+    ),
+    (
+      10,
+      '2025-02-28T15:37:39.947Z',
+      '2025-02-28T20:37:39.947Z',
+      'Cito terror admitto iure tamquam accusator.'
+    ),
+    (
+      10,
+      '2025-03-02T17:13:25.587Z',
+      '2025-03-02T20:13:25.587Z',
+      'Tibi adiuvo audio occaecati.'
+    );
+
+-- Fremont - Use to test if listing is outside viewport bounds
 insert into
   listings (
     place_id,
-    line1,
+    address_line_1,
+    city,
+    "state",
+    zip,
     neighborhood,
+    list_price,
+    listed_date,
+    property_type_id,
+    listing_status_id,
+    "description",
+    beds,
+    baths,
+    sqft,
+    lot_size,
+    year_built,
     view,
     waterfront,
     geom
@@ -51,7 +119,20 @@ values
   (
     'ChIJlZZrbAEVkFQRZgs3nJ58EYk',
     '3423 Albion Place North',
+    'Seattle',
+    'WA',
+    '98103',
     'Fremont',
+    386000,
+    '2024-08-30T21:25:23.613Z',
+    4,
+    1,
+    'Coepi nulla surculus viridis sapiente dicta adeptio nobis dolor.',
+    4,
+    2,
+    1400,
+    1300,
+    1943,
     false,
     false,
     ST_SetSRID(
@@ -63,29 +144,40 @@ values
 insert into
   photo_galleries (listing_id)
 values
-  (3);
+  (12);
 
 insert into
   photo_gallery_images (photo_gallery_id, url, caption, position)
 values
   (
-    2,
+    6,
     '/gallery/M7H-uAeIqRtr/0.jpg',
     'Bellum suppono vel delego vita aedificium',
     0
   ),
   (
-    2,
+    6,
     '/gallery/M7H-uAeIqRtr/1.jpg',
     'Beneficium surgo verus ascisco deinde confugo ustulo deduco',
     1
   ),
   (
-    2,
+    6,
     '/gallery/M7H-uAeIqRtr/2.jpg',
     'Suffragium creptio auditor turpis patria',
     2
   );
+
+insert into
+  open_houses (listing_id, start_time, end_time, comments)
+  values
+    (
+      12,
+      '2024-12-12T12:46:32.978Z',
+      '2024-12-12T16:46:32.978Z',
+      'Conqueror ventus solvo urbs depono quasi dignissimos auditor temperantia.'
+    );
+
 
 -- Magnolia
 insert into
