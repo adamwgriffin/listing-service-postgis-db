@@ -1,0 +1,648 @@
+{
+  "address": {
+    "line1": "213A North 39th Street",
+    "line2": "",
+    "city": "Seattle",
+    "state": "Washington",
+    "zip": "98103"
+  },
+  "_id": "679445b59235138a3a7a1091",
+  "listPrice": 478000,
+  "listedDate": "2024-11-11T14:10:50.675Z",
+  "placeId": "ChIJN8s8bakVkFQROOxDzEy1P_I",
+  "neighborhood": "Fremont",
+  "propertyType": "land",
+  "status": "active",
+  "description": "Tondeo thorax amiculum angustus. Adhaero sono sponte surculus ventus cribro auditor. Auctor vito custodia acies.",
+  "beds": 0,
+  "baths": 0,
+  "sqft": 1600,
+  "yearBuilt": 1992,
+  "photoGallery": [
+    {
+      "url": "/gallery/J8uh5DvjaZy5/0.jpg",
+      "caption": "Quisquam calculus conspergo cena stultus",
+      "_id": "679445b59235138a3a7a1093"
+    }
+  ],
+  "propertyDetails": [
+    {
+      "name": "Pauci Alius Caste",
+      "description": "Timidus cruentus iure argumentum thesaurus",
+      "details": [
+        {
+          "name": "Incidunt Atqui",
+          "details": [
+            "Deripio"
+          ],
+          "_id": "679445b59235138a3a7a1095"
+        },
+        {
+          "name": "Cursim",
+          "details": [
+            "Nulla",
+            "Deprecator",
+            "Correptius",
+            "Thalassinus",
+            "Bellum"
+          ],
+          "_id": "679445b59235138a3a7a1096"
+        }
+      ],
+      "_id": "679445b59235138a3a7a1094"
+    },
+    {
+      "name": "Repellendus Ultra",
+      "description": "Comedo attero amiculum uberrime virtus veniam",
+      "details": [
+        {
+          "name": "Studio",
+          "details": [
+            "Vorax",
+            "Tot",
+            "Adflicto",
+            "Vulgo",
+            "Corona",
+            "Thema"
+          ],
+          "_id": "679445b59235138a3a7a1098"
+        },
+        {
+          "name": "Agnosco",
+          "details": [
+            "Utor"
+          ],
+          "_id": "679445b59235138a3a7a1099"
+        },
+        {
+          "name": "Deporto",
+          "details": [
+            "Peccatus"
+          ],
+          "_id": "679445b59235138a3a7a109a"
+        },
+        {
+          "name": "Avarus Cogito Pauper",
+          "details": [
+            "Agnitio",
+            "Contra",
+            "Corona",
+            "Error",
+            "Cernuus"
+          ],
+          "_id": "679445b59235138a3a7a109b"
+        },
+        {
+          "name": "Patior",
+          "details": [
+            "Tempora",
+            "Vulgo",
+            "Arma",
+            "Agnosco",
+            "Ater",
+            "Bardus"
+          ],
+          "_id": "679445b59235138a3a7a109c"
+        },
+        {
+          "name": "Sollers Demulceo",
+          "details": [
+            "Vulgus",
+            "Combibo",
+            "Desidero",
+            "Ciminatio",
+            "Commemoro"
+          ],
+          "_id": "679445b59235138a3a7a109d"
+        }
+      ],
+      "_id": "679445b59235138a3a7a1097"
+    },
+    {
+      "name": "Antea Super Comptus",
+      "description": "Absens conor comptus solium conicio",
+      "details": [
+        {
+          "name": "Amitto Vergo",
+          "details": [
+            "Deripio",
+            "Deduco",
+            "Tres",
+            "Demens",
+            "Vomica",
+            "Vigor"
+          ],
+          "_id": "679445b59235138a3a7a109f"
+        },
+        {
+          "name": "Terreo",
+          "details": [
+            "Usus",
+            "Solus"
+          ],
+          "_id": "679445b59235138a3a7a10a0"
+        },
+        {
+          "name": "Odit Suppellex",
+          "details": [
+            "Complectus",
+            "Acer",
+            "Cohors"
+          ],
+          "_id": "679445b59235138a3a7a10a1"
+        }
+      ],
+      "_id": "679445b59235138a3a7a109e"
+    },
+    {
+      "name": "Accusator",
+      "description": "Absque dapifer tabgo stabilis balbus suffoco",
+      "details": [
+        {
+          "name": "Absconditus",
+          "details": [
+            "Conitor",
+            "Maxime",
+            "Curis",
+            "Teneo",
+            "Dolores",
+            "Deficio"
+          ],
+          "_id": "679445b59235138a3a7a10a3"
+        },
+        {
+          "name": "Claustrum",
+          "details": [
+            "Voluptatibus",
+            "Adinventitias",
+            "Virtus"
+          ],
+          "_id": "679445b59235138a3a7a10a4"
+        },
+        {
+          "name": "Verto Absque Deleniti",
+          "details": [
+            "Odit"
+          ],
+          "_id": "679445b59235138a3a7a10a5"
+        },
+        {
+          "name": "Celebrer Creptio",
+          "details": [
+            "Demum",
+            "Thesaurus",
+            "Argumentum",
+            "Odit",
+            "Sublime"
+          ],
+          "_id": "679445b59235138a3a7a10a6"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10a2"
+    },
+    {
+      "name": "Centum Verumtamen Circumvenio",
+      "description": "Quisquam tener amoveo absconditus accendo facere",
+      "details": [
+        {
+          "name": "Sto Ars Bonus",
+          "details": [
+            "Altus",
+            "Pax",
+            "Admoneo",
+            "Casus",
+            "Veritatis",
+            "Tredecim"
+          ],
+          "_id": "679445b59235138a3a7a10a8"
+        },
+        {
+          "name": "Comminor",
+          "details": [
+            "Caput",
+            "Ascit"
+          ],
+          "_id": "679445b59235138a3a7a10a9"
+        },
+        {
+          "name": "Coepi Tum Pecto",
+          "details": [
+            "Auctus"
+          ],
+          "_id": "679445b59235138a3a7a10aa"
+        },
+        {
+          "name": "Recusandae",
+          "details": [
+            "Truculenter",
+            "Quaerat",
+            "Distinctio",
+            "Cerno",
+            "Beatus",
+            "Triduana"
+          ],
+          "_id": "679445b59235138a3a7a10ab"
+        },
+        {
+          "name": "Eaque Absum",
+          "details": [
+            "Carcer",
+            "Concedo",
+            "Provident",
+            "Una",
+            "Nostrum"
+          ],
+          "_id": "679445b59235138a3a7a10ac"
+        },
+        {
+          "name": "Vetus Comparo Maxime",
+          "details": [
+            "Vel",
+            "Confero"
+          ],
+          "_id": "679445b59235138a3a7a10ad"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10a7"
+    },
+    {
+      "name": "Veniam",
+      "description": "Auditor talio subito caveo",
+      "details": [
+        {
+          "name": "Aperio",
+          "details": [
+            "Arbustum"
+          ],
+          "_id": "679445b59235138a3a7a10af"
+        },
+        {
+          "name": "Vomer",
+          "details": [
+            "Nesciunt",
+            "Virtus",
+            "Vulgaris",
+            "Ex"
+          ],
+          "_id": "679445b59235138a3a7a10b0"
+        },
+        {
+          "name": "Ambitus Dolorem Ab",
+          "details": [
+            "Tergiversatio",
+            "Tantum",
+            "Capio"
+          ],
+          "_id": "679445b59235138a3a7a10b1"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10ae"
+    },
+    {
+      "name": "Adicio",
+      "description": "Conforto amet degenero totam baiulus adeo",
+      "details": [
+        {
+          "name": "Aperio",
+          "details": [
+            "Solium",
+            "Veniam",
+            "Ater",
+            "Tactus",
+            "Demo"
+          ],
+          "_id": "679445b59235138a3a7a10b3"
+        },
+        {
+          "name": "Amplexus Repudiandae Cribro",
+          "details": [
+            "Bene"
+          ],
+          "_id": "679445b59235138a3a7a10b4"
+        },
+        {
+          "name": "Aufero Blanditiis",
+          "details": [
+            "Nesciunt",
+            "Urbs",
+            "Apostolus"
+          ],
+          "_id": "679445b59235138a3a7a10b5"
+        },
+        {
+          "name": "Peccatus Itaque Tergeo",
+          "details": [
+            "Aspernatur",
+            "Abutor",
+            "Tabgo",
+            "Aliquid",
+            "Audax",
+            "Creta"
+          ],
+          "_id": "679445b59235138a3a7a10b6"
+        },
+        {
+          "name": "Corrupti",
+          "details": [
+            "Vigor",
+            "Cibo",
+            "Cauda",
+            "Capitulus"
+          ],
+          "_id": "679445b59235138a3a7a10b7"
+        },
+        {
+          "name": "Fugiat",
+          "details": [
+            "Appositus",
+            "Peior",
+            "Pel"
+          ],
+          "_id": "679445b59235138a3a7a10b8"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10b2"
+    },
+    {
+      "name": "Tersus Credo",
+      "description": "Bibo denique eaque deporto",
+      "details": [
+        {
+          "name": "Cupio",
+          "details": [
+            "Doloribus",
+            "Illo",
+            "Asperiores"
+          ],
+          "_id": "679445b59235138a3a7a10ba"
+        },
+        {
+          "name": "Amitto Eos",
+          "details": [
+            "Solutio"
+          ],
+          "_id": "679445b59235138a3a7a10bb"
+        },
+        {
+          "name": "Deleniti Crustulum Sol",
+          "details": [
+            "Tenax",
+            "Creptio",
+            "Tamdiu",
+            "Comminor",
+            "Thorax"
+          ],
+          "_id": "679445b59235138a3a7a10bc"
+        },
+        {
+          "name": "Beatae Apostolus",
+          "details": [
+            "Nam",
+            "Decet",
+            "Armarium",
+            "Vereor"
+          ],
+          "_id": "679445b59235138a3a7a10bd"
+        },
+        {
+          "name": "Capto Utpote Aggredior",
+          "details": [
+            "Sui",
+            "Clamo",
+            "Tempore"
+          ],
+          "_id": "679445b59235138a3a7a10be"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10b9"
+    },
+    {
+      "name": "Voco Claro",
+      "description": "Adficio considero campana qui demum",
+      "details": [
+        {
+          "name": "Stips Viriliter Ago",
+          "details": [
+            "Textor",
+            "Inventore",
+            "Umbra",
+            "Curriculum",
+            "Curia",
+            "Peior"
+          ],
+          "_id": "679445b59235138a3a7a10c0"
+        },
+        {
+          "name": "Celo Sed",
+          "details": [
+            "Desolo",
+            "Valens",
+            "Terebro",
+            "Dolorum"
+          ],
+          "_id": "679445b59235138a3a7a10c1"
+        },
+        {
+          "name": "Caecus Aestivus Doloremque",
+          "details": [
+            "Colo",
+            "Crur",
+            "Quis",
+            "Abduco"
+          ],
+          "_id": "679445b59235138a3a7a10c2"
+        },
+        {
+          "name": "Colo",
+          "details": [
+            "Sub",
+            "Vilis"
+          ],
+          "_id": "679445b59235138a3a7a10c3"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10bf"
+    },
+    {
+      "name": "Comprehendo Praesentium Auctor",
+      "description": "Temporibus adsuesco demens delinquo acidus desino",
+      "details": [
+        {
+          "name": "Abutor",
+          "details": [
+            "Derelinquo",
+            "Victus",
+            "Vilitas",
+            "Centum",
+            "Umquam"
+          ],
+          "_id": "679445b59235138a3a7a10c5"
+        },
+        {
+          "name": "Cum",
+          "details": [
+            "Demo",
+            "Vomer",
+            "Adipiscor",
+            "Accommodo",
+            "Votum"
+          ],
+          "_id": "679445b59235138a3a7a10c6"
+        },
+        {
+          "name": "Distinctio Natus",
+          "details": [
+            "Inflammatio",
+            "Theca",
+            "Delectatio",
+            "Caput",
+            "Suspendo"
+          ],
+          "_id": "679445b59235138a3a7a10c7"
+        },
+        {
+          "name": "Illo Deleniti Ipsum",
+          "details": [
+            "Vitae",
+            "Voluptatem",
+            "Thesis",
+            "Degero",
+            "Abeo"
+          ],
+          "_id": "679445b59235138a3a7a10c8"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10c4"
+    },
+    {
+      "name": "Trucido Colligo",
+      "description": "Sonitus nisi adfero ceno suspendo",
+      "details": [
+        {
+          "name": "Laboriosam Concido",
+          "details": [
+            "Cibo",
+            "Tamen"
+          ],
+          "_id": "679445b59235138a3a7a10ca"
+        },
+        {
+          "name": "Texo",
+          "details": [
+            "Magni"
+          ],
+          "_id": "679445b59235138a3a7a10cb"
+        },
+        {
+          "name": "Depopulo",
+          "details": [
+            "Doloremque"
+          ],
+          "_id": "679445b59235138a3a7a10cc"
+        },
+        {
+          "name": "Videlicet Vivo",
+          "details": [
+            "Alias",
+            "Venustas",
+            "Creta",
+            "Paens",
+            "Tenuis",
+            "Animadverto"
+          ],
+          "_id": "679445b59235138a3a7a10cd"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10c9"
+    },
+    {
+      "name": "Torqueo",
+      "description": "Cultura cultura sollicito amaritudo",
+      "details": [
+        {
+          "name": "Universe Cattus Conduco",
+          "details": [
+            "Trans",
+            "Votum",
+            "Convoco",
+            "Vulnero",
+            "Tredecim",
+            "Apud"
+          ],
+          "_id": "679445b59235138a3a7a10cf"
+        },
+        {
+          "name": "Tamquam Vulticulus Cenaculum",
+          "details": [
+            "Angelus"
+          ],
+          "_id": "679445b59235138a3a7a10d0"
+        },
+        {
+          "name": "Vix",
+          "details": [
+            "Amor",
+            "Villa"
+          ],
+          "_id": "679445b59235138a3a7a10d1"
+        },
+        {
+          "name": "Umbra Acquiro Capto",
+          "details": [
+            "Videlicet",
+            "Amitto",
+            "Coepi",
+            "Considero"
+          ],
+          "_id": "679445b59235138a3a7a10d2"
+        },
+        {
+          "name": "Hic",
+          "details": [
+            "Tunc",
+            "Arcus",
+            "Talis"
+          ],
+          "_id": "679445b59235138a3a7a10d3"
+        },
+        {
+          "name": "Aliquam",
+          "details": [
+            "Cupiditas"
+          ],
+          "_id": "679445b59235138a3a7a10d4"
+        }
+      ],
+      "_id": "679445b59235138a3a7a10ce"
+    }
+  ],
+  "openHouses": [
+    {
+      "start": "2024-12-18T12:39:09.452Z",
+      "end": "2024-12-18T14:39:09.452Z",
+      "comments": "Terga color ver impedit civis clementia ab numquam.",
+      "_id": "679445b59235138a3a7a10d5"
+    },
+    {
+      "start": "2025-02-04T01:42:51.607Z",
+      "end": "2025-02-04T07:42:51.607Z",
+      "comments": "Ad toties usitas trepide campana beatae synagoga.",
+      "_id": "679445b59235138a3a7a10d6"
+    },
+    {
+      "start": "2025-02-28T15:37:39.947Z",
+      "end": "2025-02-28T20:37:39.947Z",
+      "comments": "Cito terror admitto iure tamquam accusator.",
+      "_id": "679445b59235138a3a7a10d7"
+    },
+    {
+      "start": "2025-03-02T17:13:25.587Z",
+      "end": "2025-03-02T20:13:25.587Z",
+      "comments": "Tibi adiuvo audio occaecati.",
+      "_id": "679445b59235138a3a7a10d8"
+    }
+  ],
+  "latitude": 47.65388837211665,
+  "longitude": -122.35601516553109,
+  "daysOnMarket": 98
+}
