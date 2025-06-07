@@ -31,7 +31,8 @@ CREATE TABLE listings (
   pool BOOLEAN NOT NULL DEFAULT false,
   air_conditioning BOOLEAN NOT NULL DEFAULT false,
   FOREIGN KEY (property_type_id) REFERENCES property_types(id),
-  FOREIGN KEY (listing_status_id) REFERENCES listing_statuses(id)
+  FOREIGN KEY (listing_status_id) REFERENCES listing_statuses(id),
+  property_details JSONB NOT NULL DEFAULT '[]'::jsonb
 );
 
 COMMENT ON COLUMN listings.place_id IS 'The Google Maps geocoder place_id.';
