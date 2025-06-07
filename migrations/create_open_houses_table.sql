@@ -3,6 +3,6 @@ CREATE TABLE open_houses (
   listing_id INTEGER NOT NULL,
   start_time TIMESTAMP WITH TIME ZONE,
   end_time TIMESTAMP WITH TIME ZONE,
-  comments VARCHAR(255),
+  comments TEXT,
   FOREIGN KEY (listing_id) REFERENCES listings(id) ON DELETE CASCADE
 );

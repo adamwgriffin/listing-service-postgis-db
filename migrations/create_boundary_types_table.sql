@@ -1,6 +1,6 @@
 create table boundary_types (
   id serial PRIMARY key,
-  name VARCHAR(50) UNIQUE NOT NULL
+  name TEXT UNIQUE NOT NULL
 );
 
 insert into
