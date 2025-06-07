@@ -5,7 +5,7 @@ CREATE TABLE listings (
   address_line_1 TEXT NOT NULL,
   address_line_2 TEXT,
   city TEXT NOT NULL,
-  state CHAR(2) NOT NULL,
+  state TEXT NOT NULL CHECK (length(state) = 2),
   zip TEXT NOT NULL,
   geom GEOMETRY(POINT, 4326) NOT NULL,
   neighborhood TEXT,
