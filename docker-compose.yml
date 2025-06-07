@@ -11,6 +11,15 @@ services:
     volumes:
       - postgis_data:/var/lib/postgresql/data
 
+  runner:
+    <<: *app-base
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    depends_on:
+      - postgis
+
 volumes:
   postgis_data:
-
