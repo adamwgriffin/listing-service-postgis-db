@@ -1,14 +1,13 @@
+x-app-base: &app-base
+  env_file: ./.env
+
 services:
   postgis:
-    image: postgis/postgis
+    <<: *app-base
+    image: ghcr.io/baosystems/postgis:latest
     container_name: postgis
-    restart: always
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: password 
-      POSTGRES_DB: listing_service 
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - postgis_data:/var/lib/postgresql/data
 
