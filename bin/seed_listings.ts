@@ -2,12 +2,13 @@ import fs from 'fs';
 import path from 'path';
 import { Client } from 'pg';
 import dotenv from 'dotenv';
+import type { ListingData } from '../lib/listing';
 
 dotenv.config();
 
 const filePath = path.join(__dirname, '..', 'data', 'fremont_listings.json');
 
-const listings = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+const listings: ListingData[] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
 const propertyTypeMapping = {
   'single-family': 1,
@@ -26,7 +27,7 @@ const propertyStatusMapping = {
 };
 
 const values = listings
-  .map((l: any) => {
+  .map((l: ListingData) => {
     return `
     (
       '${l.placeId}',
@@ -35,14 +36,17 @@ const values = listings
       'WA',
       '${l.address.zip}',
       ST_SetSRID(
-        ST_MakePoint(${l.geometry.coordinates[0]}, ${l.geometry.coordinates[1]}),
+        ST_MakePoint(
+          ${l.geometry.coordinates[0]},
+          ${l.geometry.coordinates[1]}
+        ),
         4326
       ),
       '${l.neighborhood}',
       ${l.listPrice},
       ${l.soldPrice ?? 'NULL'},
       '${l.listedDate}',
-      ${l.soldDate ? ("'"+l.soldDate+"'") : 'NULL'},
+      ${l.soldDate ? "'" + l.soldDate + "'" : 'NULL'},
       '${l.description}',
       ${l.beds},
       ${l.baths},
@@ -55,9 +59,9 @@ const values = listings
       ${Boolean(l.fireplace)},
       ${Boolean(l.basement)},
       ${Boolean(l.garage)},
-      ${Boolean(l.new_construction)},
+      ${Boolean(l.newConstruction)},
       ${Boolean(l.pool)},
-      ${Boolean(l.air_conditioning)},
+      ${Boolean(l.airConditioning)},
       ${
         propertyTypeMapping[l.propertyType as keyof typeof propertyTypeMapping]
       },
@@ -104,6 +108,8 @@ const sql = `
   VALUES
     ${values};
 `;
+
+function createListingQuery(l: any) {}
 
 const client = new Client({
   host: 'localhost',
