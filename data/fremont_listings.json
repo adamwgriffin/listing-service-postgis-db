@@ -1,7 +1,9 @@
 [
   {
     "listPrice": 478000,
+    "soldPrice": 500000,
     "listedDate": "2024-11-11T14:10:50.675Z",
+    "soldDate": "2024-11-11T14:10:50.675Z",
     "address": {
       "line1": "213A North 39th Street",
       "line2": "",
