@@ -1,11 +1,9 @@
-create table boundary_types (
-  id serial PRIMARY key,
-  name TEXT UNIQUE NOT NULL
-);
+CREATE TABLE
+  boundary_types (id serial PRIMARY KEY, NAME TEXT UNIQUE NOT NULL);
 
-insert into
-  boundary_types (name)
-values
+INSERT INTO
+  boundary_types (NAME)
+VALUES
   ('neighborhood'),
   ('city'),
   ('zip_code'),
