@@ -42,9 +42,3 @@ BEGIN
   RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
-
--- Trigger definition (same as before)
-CREATE TRIGGER generate_slug_trigger BEFORE INSERT
-OR
-UPDATE ON listings FOR EACH ROW
-EXECUTE PROCEDURE generate_slug_trigger_function ();

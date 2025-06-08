@@ -1,13 +1,14 @@
-CREATE TABLE listing_statuses (
-  id SERIAL PRIMARY KEY,
-  name TEXT UNIQUE NOT NULL,
-  label TEXT NOT NULL
-);
+CREATE TABLE
+  listing_statuses (
+    id PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL,
+    label TEXT NOT NULL
+  );
 
 INSERT INTO
-  listing_statuses (name, label)
+  listing_statuses (id, name, label)
 VALUES
-  ('active', 'Active'),
-  ('pending', 'Pending'),
-  ('sold', 'Sold'),
-  ('rented', 'Rented');
+  (1, 'active', 'Active'),
+  (2, 'pending', 'Pending'),
+  (3, 'sold', 'Sold'),
+  (4, 'rented', 'Rented');
