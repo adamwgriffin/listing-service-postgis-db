@@ -1,4 +1,4 @@
-insert into
+INSERT INTO
   listings (
     place_id,
     address_line_1,
@@ -20,7 +20,7 @@ insert into
     waterfront,
     geom
   )
-values
+VALUES
   (
     'ChIJN8s8bakVkFQROOxDzEy1P_I',
     '213A North 39th Street',
@@ -44,18 +44,22 @@ values
       ST_MakePoint(-122.35601516553109, 47.65388837211665),
       4326
     ) -- (longitude, latitude)
-  );
+  )
+RETURNING
+  id;
 
 -- Create a gallery for it
-insert into
+INSERT INTO
   photo_galleries (listing_id)
-values
-  (1);
+VALUES
+  (1)
+RETURNING
+  id;
 
 -- Add an image to it
-insert into
+INSERT INTO
   photo_gallery_images (photo_gallery_id, url, caption, position)
-values
+VALUES
   (
     5,
     '/gallery/J8uh5DvjaZy5/0.jpg',
@@ -64,9 +68,9 @@ values
   );
 
 -- Add open houses
-insert into
+INSERT INTO
   open_houses (listing_id, start_time, end_time, comments)
-  values
+  VALUES
     (
       10,
       '2024-12-18T12:39:09.452Z',
@@ -93,7 +97,7 @@ insert into
     );
 
 -- Fremont - Use to test if listing is outside viewport bounds
-insert into
+INSERT INTO
   listings (
     place_id,
     address_line_1,
@@ -115,7 +119,7 @@ insert into
     waterfront,
     geom
   )
-values
+VALUES
   (
     'ChIJlZZrbAEVkFQRZgs3nJ58EYk',
     '3423 Albion Place North',
@@ -141,14 +145,14 @@ values
     ) -- (longitude, latitude)
   );
 
-insert into
+INSERT INTO
   photo_galleries (listing_id)
-values
+VALUES
   (12);
 
-insert into
+INSERT INTO
   photo_gallery_images (photo_gallery_id, url, caption, position)
-values
+VALUES
   (
     6,
     '/gallery/M7H-uAeIqRtr/0.jpg',
@@ -168,9 +172,9 @@ values
     2
   );
 
-insert into
+INSERT INTO
   open_houses (listing_id, start_time, end_time, comments)
-  values
+  VALUES
     (
       12,
       '2024-12-12T12:46:32.978Z',
@@ -180,7 +184,7 @@ insert into
 
 
 -- Magnolia
-insert into
+INSERT INTO
   listings (
     place_id,
     line1,
@@ -189,7 +193,7 @@ insert into
     waterfront,
     geom
   )
-values
+VALUES
   (
     'EicyNTI5IDM0dGggQXZlIFcsIFNlYXR0bGUsIFdBIDk4MTk5LCBVU0EiGxIZChQKEgnBHeEohxWQVBHV_Cvk5OV0ZhDhEw',
     '2529 34th Avenue West',
@@ -202,14 +206,14 @@ values
     )
   );
 
-insert into
+INSERT INTO
   photo_galleries (listing_id)
-values
+VALUES
   (2);
 
-insert into
+INSERT INTO
   photo_gallery_images (photo_gallery_id, url, caption, position)
-values
+VALUES
   (
     4,
     '/gallery/uXWM0AqqO2An/0.jpg',
