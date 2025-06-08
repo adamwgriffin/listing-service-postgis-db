@@ -2,8 +2,14 @@
 CREATE EXTENSION IF NOT EXISTS unaccent;
 
 -- The function to generate the slug for a listing and avoid duplicates.
-CREATE OR REPLACE FUNCTION generate_unique_slug(address_line_1 TEXT, address_line_2 TEXT, city TEXT, state TEXT, zip TEXT)
-RETURNS TEXT AS $$
+CREATE
+OR REPLACE FUNCTION generate_unique_slug (
+  address_line_1 TEXT,
+  address_line_2 TEXT,
+  city TEXT,
+  state TEXT,
+  zip TEXT
+) RETURNS TEXT AS $$
 DECLARE
   unique_slug TEXT;
   counter INT := 2;
@@ -29,8 +35,8 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- Function to execute with the trigger
-CREATE OR REPLACE FUNCTION generate_slug_trigger_function()
-RETURNS TRIGGER AS $$
+CREATE
+OR REPLACE FUNCTION generate_slug_trigger_function () RETURNS TRIGGER AS $$
 BEGIN
   NEW.slug := generate_unique_slug(NEW.address_line_1, NEW.address_line_2, NEW.city, NEW.state, NEW.zip);
   RETURN NEW;
@@ -38,7 +44,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- Trigger definition (same as before)
-CREATE TRIGGER generate_slug_trigger
-BEFORE INSERT OR UPDATE ON listings
-FOR EACH ROW
-EXECUTE PROCEDURE generate_slug_trigger_function();
+CREATE TRIGGER generate_slug_trigger BEFORE INSERT
+OR
+UPDATE ON listings FOR EACH ROW
+EXECUTE PROCEDURE generate_slug_trigger_function ();
