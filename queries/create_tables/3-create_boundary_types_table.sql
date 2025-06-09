@@ -1,5 +1,7 @@
+BEGIN;
+
 CREATE TABLE
-  boundary_types (id PRIMARY KEY, "name" TEXT UNIQUE NOT NULL);
+  boundary_types (id INT PRIMARY KEY, "name" TEXT UNIQUE NOT NULL);
 
 INSERT INTO
   boundary_types (id, "name")
@@ -12,3 +14,5 @@ VALUES
   (6, 'country'),
   (7, 'school_district'),
   (8, 'school');
+
+COMMIT;

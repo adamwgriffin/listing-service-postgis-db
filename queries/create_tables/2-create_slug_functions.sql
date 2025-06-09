@@ -1,5 +1,5 @@
 -- The unaccent removes accents from Unicode characters, making slugs more consistent.
-CREATE EXTENSION IF NOT EXISTS unaccent;
+CREATE EXTENSION unaccent;
 
 -- The function to generate the slug for a listing and avoid duplicates.
 CREATE

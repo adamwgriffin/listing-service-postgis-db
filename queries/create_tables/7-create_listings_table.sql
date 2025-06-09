@@ -1,3 +1,5 @@
+BEGIN;
+
 -- Using IDENTITY for id instead of SERIAL because it's considered a better alternative
 -- for modern Postgres. Similarly BIGINT is considered a safe default new applications,
 -- especially if the table is expected to scale to a large amount of records,
@@ -59,3 +61,5 @@ CREATE TRIGGER generate_slug_trigger BEFORE INSERT
 OR
 UPDATE ON listings FOR EACH ROW
 EXECUTE PROCEDURE generate_slug_trigger_function ();
+
+COMMIT;
