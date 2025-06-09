@@ -174,7 +174,7 @@ const client = new Client({
 });
 
 try {
-  const filePath = path.join(__dirname, '..', 'data', 'fremont_listings.json');
+  const filePath = path.join(__dirname, '..', 'data', 'listings.json');
   const listings: ListingData[] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
   await client.connect();
