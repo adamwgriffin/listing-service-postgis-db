@@ -11,6 +11,17 @@ services:
     volumes:
       - postgis_data:/var/lib/postgresql/data
 
+  runner:
+    <<: *app-base
+    environment:
+      - DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}?sslmode=disable
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workspace
+    depends_on:
+      - postgis
+
 volumes:
   postgis_data:
-

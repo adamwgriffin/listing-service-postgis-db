@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import fs from 'fs';
 import path from 'path';
 import { Client } from 'pg';
@@ -164,7 +166,7 @@ function openHouseInsertQuery(listingId: number, openHouses: OpenHouse[]) {
 dotenv.config();
 
 const client = new Client({
-  host: 'localhost',
+  host: process.env.POSTGRES_HOST,
   port: Number(process.env.POSTGRES_PORT),
   user: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,

@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import fs from 'fs';
 import path from 'path';
 import { Client } from 'pg';
@@ -19,7 +21,7 @@ const values = boundaries
 const sql = `INSERT INTO boundaries (place_id, name, boundary_type_id, geom) VALUES ${values};`;
 
 const client = new Client({
-  host: 'localhost',
+  host: process.env.POSTGRES_HOST,
   port: Number(process.env.POSTGRES_PORT),
   user: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
