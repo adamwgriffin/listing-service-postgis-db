@@ -1,7 +1,7 @@
 -- Find Listings Inside a Boundary
 SELECT
   l.id,
-  l.line1,
+  l.address_line_1,
   l.neighborhood,
   l.view
 FROM
@@ -10,6 +10,26 @@ FROM
 WHERE
   -- Fremont
   b.place_id = 'ChIJ1WmlZawVkFQRmE1TlcKlxaI';
+
+-- Find listings within a boundary, excluding the bounds of the viewport
+SELECT
+  l.*
+FROM
+  listings l
+  JOIN boundaries b ON ST_Contains(b.geom, l.geom)
+WHERE
+  -- Fremont
+  b.place_id = 'ChIJ1WmlZawVkFQRmE1TlcKlxaI'
+  AND ST_Contains(
+    ST_MakeEnvelope(
+      -122.39988,
+      47.633287,
+      -122.347695,
+      47.670059,
+      4326
+    ),
+    l.geom
+  );
 
 -- Find listings within the bounds of the viewport without any boundary.
 -- Viewport bounds
@@ -41,24 +61,4 @@ WHERE
       4326
     ),
     geom
-  );
-
--- Find listings within a boundary, excluding the bounds of the viewport
-SELECT
-  l.*
-FROM
-  listings l
-  JOIN boundaries b ON ST_Contains(b.geom, l.geom)
-WHERE
-  -- Fremont
-  b.place_id = 'ChIJ1WmlZawVkFQRmE1TlcKlxaI'
-  AND ST_Contains(
-    ST_MakeEnvelope(
-      -122.39988,
-      47.633287,
-      -122.347695,
-      47.670059,
-      4326
-    ),
-    l.geom
   );
